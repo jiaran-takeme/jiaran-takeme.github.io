@@ -113,34 +113,34 @@
             }
         switch(minuteFirst){
                 case 0:
-                    minutesFirstTop= 0
+                    minuteFirstTop= 0
                     break
                 case 1:
-                    minutesFirstTop = -57.46
+                    minuteFirstTop = -57.46
                     break
                 case 2:
-                    minutesFirstTop = -114.92
+                    minuteFirstTop = -114.92
                     break
                 case 3:
-                    minutesFirstTop = -172.38
+                    minuteFirstTop = -172.38
                     break
                 case 4:
-                    minutesFirstTop = -229.84
+                    minuteFirstTop = -229.84
                     break
                 case 5:
-                    minutesFirstTop = -287.30
+                    minuteFirstTop = -287.30
                     break
                 case 6:
-                    minutesFirstTop = -344.76
+                    minuteFirstTop = -344.76
                     break
                 case 7:
-                    minutesFirstTop = -402.22
+                    minuteFirstTop = -402.22
                     break
                 case 8:
-                    minutesFirstTop = -459.68
+                    minuteFirstTop = -459.68
                     break
                 case 9:
-                    minutesFirstTop = -517.14
+                    minuteFirstTop = -517.14
                     break
             }
         switch(minuteLast){
@@ -248,6 +248,7 @@
         document.getElementById("numbersSecondsLast").style.top=secondLastTop+"px" 
         // console.log(second,secondFirstTop,secondLastTop)
     }
+    alert("注意：\n网站不会保留个人信息，请放心\n请不要在非必要的情况下使用\n请不要传播网站！！！请不要传播网站！！！请不要传播网站！！！")
     setInterval(nowDate,1000)
     setInterval(clock,1000)
 </script> 
@@ -427,8 +428,8 @@
                 <div class="base-wrapper">
                     <div class="travalBox">
                         <div class="travalBox-top">
-                            <div class="name">王*然</div>
-                            <div class="card"> 410701**********2568
+                            <div class="name" id="name">王*然</div>
+                            <div class="card" id="idNumber">410701**********2568
                                 <img src="data:image/png;base64,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" class="eyeIcon">
                             </div>
                         </div>
@@ -542,13 +543,23 @@
         const vendorVersion="1.1.8",cryptVersion="1.1.8",bizCodeVersion="1.1.8",mediaVersion="1.1.8";let oldVendorVersion=localStorage.getItem("oldVendorVersion"),oldBizCodeVersion=localStorage.getItem("oldBizCodeVersion"),oldCryptVersion=localStorage.getItem("oldCryptVersion"),oldMediaVersion=localStorage.getItem("oldMediaVersion"),debugFlag=!0,urlPrefix="https://unified-area-code-page.jianguan.henan.gov.cn/assets/";-1!==window.location.href.indexOf("unified-area-code-zwy.jianguan.henan.gov.cn/csm-uat")?urlPrefix="https://unified-area-code-zwy.jianguan.henan.gov.cn/csm-uat/assets/":-1!==window.location.href.indexOf("unified-area-code-zwy")?urlPrefix="https://unified-area-code-zwy.jianguan.henan.gov.cn/assets/":-1!==window.location.href.indexOf("unified-area-code.jianguan")?urlPrefix="https://unified-area-code.jianguan.henan.gov.cn/assets/":-1!==window.location.href.indexOf("area-code-result-uat")?urlPrefix="https://area-code-result-uat.oss-cn-north-2-gov-1.aliyuncs.com/assets/":-1!==window.location.href.indexOf("192.168.252.222")&&(urlPrefix="http://192.168.252.222:7501/assets/");var oHead=document.getElementsByTagName("HEAD").item(0);if("1.1.8"!==oldVendorVersion?(setStorageData("chunk-vendors","1.1.8","css"),setStorageData("chunk-vendors","1.1.8"),localStorage.setItem("oldVendorVersion","1.1.8")):(debugFlag&&console.log("localStorage加载chunk-vendors"),localStorage.getItem("chunk-vendors")?createJsText("chunk-vendors","1.1.8"):setStorageData("chunk-vendors","1.1.8"),localStorage.getItem("chunk-vendors-css")?createCssText("chunk-vendors","1.1.8"):setStorageData("chunk-vendors","1.1.8","css"),localStorage.setItem("oldVendorVersion","1.1.8")),"1.1.8"!==oldCryptVersion?(setStorageData("crypt","1.1.8"),localStorage.setItem("oldCryptVersion","1.1.8")):(debugFlag&&console.log("localStorage加载密码"),localStorage.getItem("crypt")?createJsText("crypt","1.1.8"):setStorageData("crypt","1.1.8"),localStorage.setItem("oldCryptVersion","1.1.8")),"1.1.8"!==oldBizCodeVersion)setStorageData("chunk-common","1.1.8","css"),setStorageData("chunk-common","1.1.8"),setStorageData("index","1.1.8"),localStorage.setItem("oldBizCodeVersion","1.1.8");else{let e=["chunk-common","index"];debugFlag&&console.log("localStorage加载普通js，css",e),e.forEach(e=>{localStorage.getItem(e)?createJsText(e,"1.1.8"):setStorageData(e,"1.1.8")}),localStorage.getItem("chunk-common-css")?createCssText("chunk-common","1.1.8"):setStorageData("chunk-common","1.1.8","css"),localStorage.setItem("oldBizCodeVersion","1.1.8")}if("1.1.8"!==oldMediaVersion){["red","yellow"].forEach(e=>{setStorageAudio(urlPrefix+"media/"+e+".mp3",e)}),localStorage.setItem("oldMediaVersion","1.1.8")}function createJsFile(e){var t=document.createElement("script");t.type="text/javascript",t.src=e,oHead.appendChild(t)}function createJsText(e,t){try{let t=window.eval(localStorage.getItem(e)),a=document.createElement("script");a.type="text/javascript",a.text=t,oHead.appendChild(a)}catch(a){let o={sceneId:null,cardNo:null,realName:null,phone:null,cityCode:null,sceneName:null,extraParam:null,error:a.toString(),serviceUri:"eval加载缓存出错"},n=new XMLHttpRequest;n.open("POST","https://unified-area-code-service.jianguan.henan.gov.cn/errorapi/error/save",!0),n.setRequestHeader("Content-Type","application/json"),n.send(JSON.stringify(o)),setStorageData(e,t)}}function createCssFile(e){var t=document.createElement("link");t.rel="stylesheet",t.href=e,oHead.appendChild(t)}function createCssText(e,t){try{let t=window.eval(localStorage.getItem(e+"-css")),a=document.createElement("style");a.innerHTML=t,oHead.appendChild(a)}catch(a){let o={sceneId:null,cardNo:null,realName:null,phone:null,cityCode:null,sceneName:null,extraParam:null,error:a.toString(),serviceUri:"eval加载缓存出错"},n=new XMLHttpRequest;n.open("POST","https://unified-area-code-service.jianguan.henan.gov.cn/errorapi/error/save",!0),n.setRequestHeader("Content-Type","application/json"),n.send(JSON.stringify(o)),setStorageData(e,t,"css")}}function setStorageData(e,t,a){let o="";o="css"===a?urlPrefix+"css/"+e+"-"+t+".css":urlPrefix+"js/"+e+"-"+t+".js";var n=new XMLHttpRequest;n.open("GET",o,!1),n.onreadystatechange=function(){n.readyState==XMLHttpRequest.DONE&&(200===n.status?"css"===a?(localStorage.setItem(e+"-css",JSON.stringify(n.responseText)),createCssText(e,t)):(localStorage.setItem(e,JSON.stringify(n.responseText)),createJsText(e,t)):"css"===a?createCssFile(o):createJsFile(o))},n.send()}function setStorageAudio(e,t){var a=new FileReader,o=new XMLHttpRequest;o.open("GET",e,!0),o.responseType="blob",o.onreadystatechange=function(){if(o.readyState==XMLHttpRequest.DONE&&200===o.status){var e=this.response;a.onload=function(e){var a=e.target.result;localStorage.setItem(t,a)},a.readAsDataURL(e)}},o.send()}
     </script>
     <script>loadFinishFlag=!0</script>
-        <br>
-        地点<input type="text" id="inputPlace"><button onclick="getPlace()">提交</button><br>  
+    <br>
+        地点<input type="text" id="inputPlace"><button onclick="getPlace()">提交地点</button><br>
+        姓名<input type="text" id="inputName"><button onclick="getName()">提交姓名</button><br>
+        身份证号<input type="text" id="inputIdNumber"><button onclick="getId()">提交身份证号</button>
     <script>
-    function getPlace(){
+        function getPlace(){
             var place = document.getElementById("inputPlace").value
             document.getElementById("place").innerText=place
-        }    
+        } 
+        function getName(){
+            var name = document.getElementById("inputName").value
+            document.getElementById("name").innerText=name
+        }
+        function getId(){
+            var idNumber = document.getElementById("inputIdNumber").value
+            document.getElementById("idNumber").innerText=idNumber
+        }   
     </script>
 </body>
 </html>
